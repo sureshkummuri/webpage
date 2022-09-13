@@ -1,4 +1,4 @@
-# Programming Basics Group - Project 1
+# Programming Basics - Project 1
 
 Practice converting a mockup into HTML and CSS.
 
