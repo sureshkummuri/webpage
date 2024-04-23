@@ -15,6 +15,7 @@ html {
 body {
   max-width: 1440px;
   margin: auto;
+  font-family: "Open Sans", sans-serif;
 }
 
 .logo {
@@ -44,21 +45,29 @@ header {
   height: 800px;
 }
 
+.banner {
+  display: flex;
+  justify-content: space-between;
+}
+
 .menu {
-  width: 400px;
-  height: 70px;
+  display: flex;
+  height: 50px;
+  align-items: center;
+  gap: 30px;
+  border-right: 1px solid white;
 }
 
 ul {
   display: flex;
+  gap: 30px;
   justify-content: center;
   align-items: center;
+  margin: 0;
 }
 
 ul li {
   list-style: none;
-  margin-left: 62px;
-  margin-top: 27px;
   font-size: 14px;
 }
 
@@ -67,7 +76,6 @@ ul li a {
   color: #fff;
   font-family: Arial;
   font-weight: bold;
-  transition: 0.4s ease-in-out;
   text-transform: uppercase;
 }
 
@@ -75,10 +83,52 @@ ul li a:hover {
   color: #ff7200;
 }
 
+.menu__cart {
+  width: 12px;
+  margin: 20px;
+}
+
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  width: 170px;
+  padding-left: 15px;
+  gap: 0 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact__phonecall {
+  filter: invert(100%);
+  width: 18px;
+}
+
+.contact__number {
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.contact__reservation {
+  color: #fff;
+  font-size: 10px;
+}
+
+.menu__button {
+  color: #fff;
+  background-color: #FF7303;
+  font-family: Arial;
+  font-weight: bold;
+  text-transform: uppercase;
+  width: 170px;
+  height: 50px;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+
+}
+
 .content {
-  width: 3000px;
-  height: auto;
-  margin: auto;
   color: #ff7200;
 }
 
@@ -98,4 +148,8 @@ ul li a:hover {
   border-radius: 10px;
   cursor: pointer;
 
+}
+
+nav {
+  display: flex;
 }
