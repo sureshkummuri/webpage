@@ -13,6 +13,7 @@ html {
 }
 
 body {
+
   max-width: 1440px;
   margin: auto;
   font-family: "Open Sans", sans-serif;
@@ -43,11 +44,22 @@ header {
   background-image: url('../assets/welcome-image.jpg');
   padding: 20px;
   height: 800px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .banner {
   display: flex;
   justify-content: space-between;
+  margin-top: 50px;
+  max-width: 1200px;
+  width: 100%;
+  height: 50px;
+}
+
+nav {
+  display: flex;
 }
 
 .menu {
@@ -56,6 +68,7 @@ header {
   align-items: center;
   gap: 30px;
   border-right: 1px solid white;
+  margin-right: 10px;
 }
 
 ul {
@@ -96,22 +109,25 @@ ul li a:hover {
   gap: 0 10px;
   align-items: center;
   justify-content: center;
+  margin-right: 10px;
 }
 
 .contact__phonecall {
   filter: invert(100%);
   width: 18px;
+  height: 25px;
 }
 
 .contact__number {
   color: #fff;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: bold;
+  margin-right: 20px;
 }
 
 .contact__reservation {
   color: #fff;
-  font-size: 10px;
+  font-size: 12px;
 }
 
 .menu__button {
@@ -122,34 +138,167 @@ ul li a:hover {
   text-transform: uppercase;
   width: 170px;
   height: 50px;
-  border: none;
   font-size: 14px;
   cursor: pointer;
-
 }
 
-.content {
+.welcome {
+  /* position: absolute;
+  top: 200px;
+  left: 500px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   color: #ff7200;
+  text-align: center;
+  font-family: "ZCOOL XiaoWei", sans-serif;
+  padding-right: 50%;
+  margin-bottom: 100px;
+  margin-left: 100px;
 }
 
-.par {
+.welcome h1 {
+  font-size: 40px;
+  font-weight: normal;
+}
+
+.welcome h1 span {
+  font-size: 80px;
+}
+
+.welcome .line {
+  width: 30px;
+  height: 2px;
+  background-color: #fff;
+  display: flex;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.welcome__tagline {
   color: #fff;
+  display: flex;
+  align-items: center;
 }
 
-.content .cn {
-  width: 100px;
+.welcome__tagline p {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.welcome__button {
+  width: 150px;
   height: 40px;
   background: #ff7200;
   border: none;
   margin-bottom: 10px;
   margin-left: 20px;
+  margin-top: 10px;
   font-size: 18px;
   color: #fff;
-  border-radius: 10px;
+  border-radius: 0;
   cursor: pointer;
+  font-family: Arial;
+}
+
+.intro {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: -100px;
 
 }
 
-nav {
+.dish {
+  width: 300px;
+  height: 300px;
+  background: white;
+  top: 50px;
+  left: 400px;
+  /* box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); */
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25), 0 -5px 20px rgba(0, 0, 0, 0.25);
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.dish h2 {
+  font-family: "ZCOOL XiaoWei", sans-serif;
+  font-size: 25px;
+}
+
+.dish h2 span {
+  color: #d67e34;
+  font-family: "ZCOOL XiaoWei", sans-serif;
+}
+
+.dish p {
+  display: flex;
+  font-size: 20px;
+  font-family: "ZCOOL XiaoWei", sans-serif;
+  text-align: center;
+}
+
+
+.intro__dish {
+  /* filter: invert(); */
+  filter: invert(63%) sepia(9%) saturate(1731%) hue-rotate(351deg) brightness(93%) contrast(89%);
+  justify-content: center;
+}
+
+main {
+  display: flex;
+}
+
+.discover {
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+  justify-content: center;
+  margin-top: 100px;
+  text-align: center;
+}
+
+.discover h2 {
+  font-family: Cookie;
+  font-size: 50px;
+}
+
+.discover p {
+  font-size: 20px;
+  font-family: normal;
+  font-weight: lighter;
+}
+
+.discover h3 span {
+  color: #d67e34;
+}
+
+
+/* .celebrate { */
+/* display: flex; */
+/* gap: 20px; */
+/* margin-top: 100px; */
+/* filter:brightness(20%) */
+
+/* } */
+
+/* .celebrate__food { */
+/* width: 100% ; */
+/* } */
+.celebrate{
+  background-image: url('../assets/delicious-food.jpg');
+}
+.celebrate h2 {
+ 
+  color: rgb(224, 134, 16);
+  padding: 150px;
+  font-family: Cookie;
+  font-size: 50px;
+
+}
+
+.celebrate p {
+  /* background-image: url('../assets/delicious-food.jpg'); */
+  color: #fff;
 }
